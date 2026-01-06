@@ -1,4 +1,4 @@
-# Static Site for wmcarlson.com
+# wmcarlson.com
 
 This is a standalone HTML file that can be uploaded directly to your web hosting.
 
