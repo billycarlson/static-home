@@ -1008,6 +1008,22 @@ r-grid.main { counter-reset: work; }
   height: auto;
   background: var(--letterbox-color);
 }
+
+/* Empty slot, so the space is visible before the artwork exists.
+   Delete .role-figure-slot from the CSS once all six images are in. */
+.role-figure-slot {
+  aspect-ratio: var(--role-figure-ratio, 4 / 3);
+  background: var(--letterbox-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.role-figure-slot span {
+  font-family: var(--monoFont);
+  font-size: var(--text-xs);
+  letter-spacing: 0;
+  color: var(--foreground-color-dimmed);
+}
 .role-figure figcaption {
   margin-top: calc(var(--unit) * 0.75);
   font-family: var(--monoFont);
