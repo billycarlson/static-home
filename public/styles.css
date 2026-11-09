@@ -364,9 +364,10 @@ r-grid.main h1 {
   color: var(--accent-color, var(--hot-orange));
 }
 @media (max-width: 640px) {
+  /* No closing border here: stacked, the next thing is the Career head, which
+     carries its own 2px rule. The two together read as a double line. */
   .intro {
-    padding-bottom: calc(var(--unit) * 4);
-    border-bottom: 0.15rem solid var(--foreground-color);
+    padding-bottom: calc(var(--unit) * 2);
   }
 }
 

@@ -1,0 +1,4 @@
+.DS_Store
+
+# Rendered Dribbble shots — output, not source. Regenerate from the live page.
+/dribbble/
