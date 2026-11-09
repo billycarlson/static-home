@@ -1048,3 +1048,54 @@ r-grid.main { counter-reset: work; }
   }
   .career-head { margin-bottom: calc(var(--unit) * 2); }
 }
+
+/* ---- About, at the foot of the page ---- */
+.about-facts .role-meta {
+  margin-bottom: calc(var(--unit) * 0.5);
+}
+.about-facts > p + .role-meta {
+  margin-top: calc(var(--unit) * 3);
+}
+.about-facts p:not(.role-meta) {
+  font-size: var(--text-sm);
+  color: var(--foreground-color-dimmed);
+  margin-bottom: 0;
+}
+.about-facts a { white-space: nowrap; }
+
+.about-body > p {
+  max-width: var(--measure-body);
+}
+.about-sub {
+  margin-top: calc(var(--unit) * 5);
+  margin-bottom: calc(var(--unit) * 1.5);
+  padding-top: calc(var(--unit) * 1.5);
+  border-top: 1px solid rgba(var(--foreground-color-rgb), 0.15);
+}
+
+.writing-list {
+  list-style: none;
+  margin: 0 0 var(--line-height);
+  padding: 0;
+  max-width: var(--measure-body);
+}
+.writing-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: calc(var(--unit) * 2);
+  padding: calc(var(--unit) * 0.75) 0;
+  border-bottom: 1px solid rgba(var(--foreground-color-rgb), 0.1);
+}
+.writing-list time {
+  flex-shrink: 0;
+  font-size: var(--text-xs);
+}
+
+/* The one place the page says what it is holding back. */
+.about-ask {
+  margin-top: calc(var(--unit) * 4);
+  padding-top: calc(var(--unit) * 1.5);
+  border-top: var(--hr-weight) solid var(--foreground-color);
+  max-width: var(--measure-body);
+}
