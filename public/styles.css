@@ -1001,6 +1001,9 @@ r-grid.main { counter-reset: work; }
    /images/<company>.jpg and uncomment the <figure> in that role. The box
    holds the image's own proportions — nothing is cropped to a band. */
 .role-figure {
+  /* Hidden until the artwork exists. Remove this line to bring the image
+     area back. */
+  display: none;
   margin-top: calc(var(--unit) * 2);
 }
 .role-figure img {
